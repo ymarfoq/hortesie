@@ -1,0 +1,26 @@
+-----
+> Villes
+> Villages
+> Milieux
+> Design
+> Urbanisme
+> Inclassables
+> Textes
+
+chacun des thèmes comporte un nombre d’images à visualiser variable
+par exemple, le thème ville pourrait comprendre près de 10 références avec pour chacune 2 à 3 photos à présenter, dont au moins un en pleine page
+par exemple le thème village pourrait comprendre 2 ou 3 références seulement avec 2 à 3 photos ….. 
+le thème urbanisme présentera plutôt des cartes
+le thème inclassable présentera des études
+le thème texte présentera des articles publiés ou rédigés
+-----
+
+
+-----
+Nous avons retravaillé l’architecture du site internet, je te joins une page schématique.
+En effet, nous préférons présenter tous les projets sur une même page, par une vignette qui renvoi vers les photos du projet en vignette, ce qui nous évite le casse tête horrible de ranger les projets par catégories et permet d’avoir une vue d’ensemble sur une seule page.
+Ensuite, nous pensons faire une page « Pratique » sur le même mode que la page projet, avec renvoi vers des textes de présentation, d’étude, d’articles que nous avons écrit, etc..
+Une page contact avec nos coordonnées avec en fond de plan l’arbre à bouteille en clair
+Une page « recherche », qui permet au visiteur de retrouver les projets par mot clé, certains étant apparents dans les textes de description et d’autres masqués permettant par exemple de chercher les aménagements de rivière, d’espace public, par ex etc,…  non utilisés dans le descriptif.
+-----
+ 
