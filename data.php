@@ -15,4 +15,9 @@ $conn->exec("CREATE TABLE IF NOT EXISTS projets(
 									lien TEXT,
 									contact TEXT);");
 
+$conn->exec("CREATE TABLE IF NOT EXISTS photos(
+									id INTEGER PRIMARY KEY,
+									idProjet INTEGER,
+									nom TEXT,
+									date TEXT);");
 ?>

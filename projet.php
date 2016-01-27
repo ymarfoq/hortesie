@@ -1,19 +1,12 @@
 <?php session_start(); 
 header( 'content-type: text/html; charset=utf-8' );
- if(isset($_POST['mdp'])){if($_POST['mdp']=='GretaMarie'){$_SESSION['admin']=TRUE;}else{$_SESSION['admin']=FALSE;}}else{if(!(isset($_SESSION['admin']))){$_SESSION['admin']=FALSE;}};
- include('header.php')
-?>
-		<article>
-	<form id='admin' method="post">
-		<?php if($_SESSION['admin']){echo "<input type='hidden' name='mdp' id='mdp' value='xxx'><input type='submit' value='EXIT'>";}
-			else{echo "<input type='password' name='mdp' size=5 id='mdp' value=''><input type='submit' value=';-)'>";}
-		?>
-	</form>
-		<?php
-		$db = new PDO('sqlite:base.db');
+
+if(isset($_POST['mdp'])){if($_POST['mdp']=='GretaMarie'){$_SESSION['admin']=TRUE;}else{$_SESSION['admin']=FALSE;}}else{if(!(isset($_SESSION['admin']))){$_SESSION['admin']=FALSE;}};
+
+	include('header.php');
 		
-		if($_SESSION['admin']){
-			echo "
+	if($_SESSION['admin']){
+		echo "
 		<form method='post' action='base.php'>
 			<fieldset>
 				<legend> Nouveau </legend>
@@ -51,21 +44,21 @@ header( 'content-type: text/html; charset=utf-8' );
 				</table>
 			</fieldset>
 		</form>";};
-		
-		$type=$_GET['type'];
-		$projets = $db->query("SELECT * FROM projets WHERE type='".$type."';")->fetchAll();
-		foreach($projets as $projet){
-			echo "
-			<div class='vignette'>
-				<h4>".$projet['nom']."</h4>
-				<img id='".$projet['id']."' src='".$projet['vignette']."' width=130 alt='".$projet['nom']."'>
-				<span>".$projet['resume']."</span>
-			</div>
-			";
-		};
+	
+	
+	$type=$_GET['type'];
+	$projets = $db->query("SELECT * FROM projets WHERE type='".$type."';")->fetchAll();
+	foreach($projets as $projet){
+		echo "
+		<a href='page.php?projet=".$projet['id']."' class='vignette'>
+			<h4>".$projet['nom']."</h4>
+			<img id='".$projet['id']."' src='".$projet['vignette']."' width=130 alt='".$projet['nom']."'>
+			<span>".$projet['resume']."</span>
+		</a>
+		";
+	};
 ?>
 		</article>
 	</section>
-<script src="script.js"></script>
 </body
 </html>

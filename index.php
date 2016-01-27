@@ -20,10 +20,10 @@ section{height:100%; background:url("./images/arbre.jpg"); background-size:100% 
 </head>
 <body>
 	<section>
-		<a class="bouteille" id="b1" href="page.php?section=pratique"><h1>PRATIQUE</h1></a>
-		<a class="bouteille" id="b2" href="page.php?section=projet"><h1>PROJET</h1></a>
-		<a class="bouteille" id="b3" href="page.php?section=contact"><h1>CONTACT</h1></a>
-		<a class="bouteille" id="b4" href="page.php?section=recherche"><h1>RECHERCHE</h1></a>
+		<a class="bouteille" id="b1" href="projet.php?type=pratique"><h1>PRATIQUE</h1></a>
+		<a class="bouteille" id="b2" href="projet.php?type=projet"><h1>PROJET</h1></a>
+		<a class="bouteille" id="b3" href="contact.php?"><h1>CONTACT</h1></a>
+		<a class="bouteille" id="b4" href="recherche.php"><h1>RECHERCHE</h1></a>
 	</section>
 </body
 </html>

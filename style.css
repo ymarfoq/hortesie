@@ -95,8 +95,9 @@ textarea{
 	margin:30px;
 	display:inline-block;
 	cursor:pointer;
+	text-decoration:none;
+	color:black;
 }
-
 
 
 .vignette span {
@@ -119,67 +120,28 @@ textarea{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* --- SLICK --- */
-/* Slider */
-.slick-slider{position:relative; display:block;}
-.slick-list{position:relative; display:block;}
-.slick-track:before,.slick-track:after{display:table; content:'';}
-.slick-track:after{clear: both;}
-.slick-slide{display:none; float:left; height:100%; min-height: 1px;}
-.slick-initialized .slick-slide{display: block;}
-
-@charset 'UTF-8';
-/* Icons */
-@font-face
-{	font-family: 'slick';
-	font-weight: normal;
-    font-style: normal;
-
-    src: url('./fonts/slick.eot');
-    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+/* jssor slider arrow navigator skin 12 css */
+/*
+.jssora12l                  (normal)
+.jssora12r                  (normal)
+.jssora12l:hover            (normal mouseover)
+.jssora12r:hover            (normal mouseover)
+.jssora12l.jssora12ldn      (mousedown)
+.jssora12r.jssora12rdn      (mousedown)
+*/
+.jssora12l, .jssora12r {
+	display: block;
+	position: absolute;
+	/* size of arrow element */
+	width: 30px;
+	height: 46px;
+	cursor: pointer;
+	background: url('images/a12.png') no-repeat;
+	overflow: hidden;
 }
-/* Arrows */
-.slick-prev, .slick-next{font-size:0; line-height:0; position:absolute; top:50%; display:block; width:20px; height:20px; margin-top:-10px; padding:0; cursor:pointer; color:transparent; border:none; outline:none; background:transparent;}
-.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {color:transparent; outline:none; background:transparent;}
-.slick-prev:hover:before, .slick-prev:focus:before, .slick-next:hover:before, .slick-next:focus:before{opacity:1;}
-.slick-prev.slick-disabled:before, .slick-next.slick-disabled:before{opacity:.25;}
-.slick-prev:before, .slick-next:before{font-family:'slick'; font-size:20px; line-height:1; opacity:.75; color: black;  -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;}
-.slick-prev{left: -25px;}
-.slick-prev:before{content: '←';}
-.slick-next{right:-25px;}
-.slick-next:before{content:'→';}
-
-/* Dots */
-.slick-slider{margin-bottom:30px;}
-.slick-dots{position:absolute; bottom:-45px; display:block; width:100%; padding:0; list-style:none; text-align:center;}
-.slick-dots li{position:relative; display:inline-block; width:20px; height:20px; margin:0 5px; padding:0; cursor:pointer;}
-.slick-dots li button{font-size:0; line-height:0; display:block; width:20px; height:20px; padding:5px; cursor:pointer; color:transparent; border: 0; outline:none; background:transparent;}
-.slick-dots li button:hover:before, .slick-dots li button:focus:before{opacity:1;}
-.slick-dots li button:before{font-family:'slick'; font-size:6px; line-height:20px; position:absolute; top:0; left:0; width:20px; height:20px; content:'•'; text-align:center; opacity:.25; color:black; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;}
-.slick-dots li.slick-active button:before{opacity:.75; color: black;}
+.jssora12l { background-position: -16px -37px; }
+.jssora12r { background-position: -75px -37px; }
+.jssora12l:hover { background-position: -136px -37px; }
+.jssora12r:hover { background-position: -195px -37px; }
+.jssora12l.jssora12ldn { background-position: -256px -37px; }
+.jssora12r.jssora12rdn { background-position: -315px -37px; }
