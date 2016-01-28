@@ -97,6 +97,7 @@ textarea{
 	cursor:pointer;
 	text-decoration:none;
 	color:black;
+	vertical-align:top;
 }
 
 
@@ -118,7 +119,6 @@ textarea{
   border: 1px solid black;
   border-radius:4px;
 }
-
 
 /* jssor slider arrow navigator skin 12 css */
 /*
