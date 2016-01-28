@@ -50,7 +50,7 @@ elseif($action=="supprimerProjet"){
 elseif($action=="ajouterPhotos"){
 	if(count($_FILES['albumPhoto']['name'])) {
 		foreach ($_FILES['albumPhoto']['name'] as $position => $file) {
-			$nom = "images/projets/".$_POST["idProjet"]."".strtolower($file);
+			$nom = "images/projets/".$_POST["idProjet"]."/".strtolower($file);
 			move_uploaded_file($_FILES['albumPhoto']['tmp_name'][(string)$position],$nom);
 			$sth=$conn->exec('INSERT INTO photos(idProjet, nom) VALUES("'.$_POST["idProjet"].'","'.$nom.'");');
 		}
