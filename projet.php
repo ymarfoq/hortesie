@@ -27,8 +27,6 @@ if(isset($_POST['mdp'])){if($_POST['mdp']=='GretaMarie'){$_SESSION['admin']=TRUE
 						</td>
 					</tr>
 						<td>
-							<label for='resume'>Résumé :</label>
-							<textarea name='resume' rows=8>Résumé du projet en quelques mots</textarea><br><br>
 							<label for='motscle'>Mots clés :</label>
 							<textarea name='motscle' rows=8>mots,tous,séparés,d'une,virgule</textarea>
 						</td>
@@ -50,9 +48,8 @@ if(isset($_POST['mdp'])){if($_POST['mdp']=='GretaMarie'){$_SESSION['admin']=TRUE
 	foreach($projets as $projet){
 		echo "
 		<a href='page.php?projet=".$projet['id']."' class='vignette'>
-			<h4>".$projet['nom']."</h4>
-			<img id='".$projet['id']."' src='".$projet['vignette']."' width=130 alt='".$projet['nom']."'>
-			<span>".$projet['resume']."</span>";
+			<span>".$projet['nom']."</span>
+			<img id='".$projet['id']."' src='".$projet['vignette']."' width=130 alt='".$projet['nom']."'>";
 		if($_SESSION['admin']){
 			echo "
 				<form action='data.php' method='post'>

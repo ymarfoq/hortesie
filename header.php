@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" media="all" href="style.css">
 	<script type='text/javascript' src='js/script.js'></script>
 </head>
-<body>
+<body class="<?php echo $fond; ?>">
 	<section>
 		<nav>
 			<table><tr>
@@ -18,7 +18,7 @@
 				<td valign=middle align=center width=150><a class="menu" href="projet.php?type=projet">PROJET</a></td>
 				<td valign=middle align=center width=150><a class="menu" href="contact.php">CONTACT</a></td>
 				<td class="recherche">
-						<form action='search.php' methode='post'>
+						<form action='recherche.php' method='post'>
 							<input type='text' name='recherche'>
 							<input type='submit' value='Recherche'>						
 						</form>

@@ -1,6 +1,10 @@
 html{
-background:url("./images/arbre_white.jpg"); background-size:cover; background-position:0 -500px;
-font-size:12px;
+	font-size:14px;
+	font-family:Cambria;
+}
+
+.arbre{
+	background:url("./images/arbre_white.jpg"); background-size:cover; background-position:0 -500px;
 }
 
 *{
@@ -14,13 +18,13 @@ table{
 
 nav{
 	height:60px;
-	font-size:16px;
+	font-size:18px;
 	margin-bottom:20px;
 	/*box-shadow:0px 0px 5px black;*/
 }
 
 h1{
-	font-size:24px;
+	font-size:26px;
 }
 
 .menu{
@@ -70,7 +74,7 @@ h2{
 }
 
 h3{
-	font-size:14pxl
+	font-size:16pxl
 }
 
 h4{
@@ -84,7 +88,7 @@ h4{
 }
 
 form{
-	font-size:12px;
+	font-size:14px;
 }
 
 textarea{
@@ -98,26 +102,25 @@ textarea{
 	text-decoration:none;
 	color:black;
 	vertical-align:top;
+	text-align:center;
 }
 
 
 .vignette span {
-   display: none; /* On masque l'infobulle. */
+  display: none; /* On masque l'infobulle. */
+  position:absolute;
+  margin:10px 10px 10px 10px;
+	padding:1px 6px;
+  background: #CCCCCC;
+  border:1px solid #AAAAAA;
 }
 .vignette:hover {
    background: none; /* Correction d'un bug d'Internet Explorer. */
-   z-index: 500; /* On définit une valeur pour l'ordre d'affichage. */
+   z-index: 500; /* On définit une valeur pour que le text soit au dessus. */
 }
 
 .vignette:hover span {
-  display: block; /* On affiche l'infobulle. */
-	position:absolute;
-	margin:-120px 0px 0px 10px;
-	padding:4px;
-  white-space: nowrap; /* On change la valeur de la propriété white-space pour qu'il n'y ait pas de retour à la ligne non désiré. */
-  background: white;
-  border: 1px solid black;
-  border-radius:4px;
+  display:block; /* On affiche l'infobulle. */
 }
 
 /* jssor slider arrow navigator skin 12 css */
