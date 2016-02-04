@@ -123,6 +123,11 @@ textarea{
   display:block; /* On affiche l'infobulle. */
 }
 
+.resume{
+	display:inline;
+	margin:40px;
+	vertical-align:top;
+}
 /* jssor slider arrow navigator skin 12 css */
 /*
 .jssora12l                  (normal)

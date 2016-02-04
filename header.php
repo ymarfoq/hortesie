@@ -1,3 +1,10 @@
+<?php
+header('content-type: text/html; charset=utf-8');
+$db = new PDO('sqlite:base.db');
+$mdp = $db->query("SELECT mdp FROM mdp;")->fetch()[0];
+
+if(isset($_POST['mdp'])){if(password_verify($_POST['mdp'],$mdp)){$_SESSION['admin']=TRUE;}else{$_SESSION['admin']=FALSE;}}else{if(!(isset($_SESSION['admin']))){$_SESSION['admin']=FALSE;}};
+?>
 <!DOCTYPE html>
 <html lang=en>
 <head>
@@ -9,7 +16,7 @@
 	<link rel="stylesheet" type="text/css" media="all" href="style.css">
 	<script type='text/javascript' src='js/script.js'></script>
 </head>
-<body class="<?php echo $fond; ?>">
+<body class="<?php echo $fond;?>">
 	<section>
 		<nav>
 			<table><tr>
@@ -30,7 +37,6 @@
 	<form id='admin' method="post">
 		<?php if($_SESSION['admin']){echo "<input type='hidden' name='mdp' id='mdp' value='xxx'><input type='submit' value='EXIT'>";}
 			else{echo "<input type='password' name='mdp' size=5 id='mdp' value=''><input type='submit' value=';-)'>";}
-			$db = new PDO('sqlite:base.db');
 		?>
 	</form>
 	

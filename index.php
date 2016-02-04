@@ -9,9 +9,9 @@ header( 'content-type: text/html; charset=utf-8' );
 html{height:100%;}
 body{height:100%; margin:0;}
 section{height:100%; background:url("./images/arbre.jpg"); background-size:100% 100%;}	
-.bouteille{position:fixed; height:8%; width:2%; overflow:hidden; text-decoration:none; border-radius:20px; border:2px solid red;}
+.bouteille{position:fixed; width:0; padding:10px 0 10px 40px; overflow:hidden; text-decoration:none; cursor:pointer;}
 .bouteille:hover{width:auto;}
-.bouteille h1{margin-top:18px; margin-left:40px; margin-right:10px; vertical-align:middle; color:red; font-size:30px; font-family:"verdana";}
+.bouteille h1{padding:3px 6px; color:black; display:table-cell; font-size:20px; font-family:"Verdana"; background:#C4D3CC; border:1px solid #7F7F7F}
 #b1{top:42%; left:39%;}	
 #b2{top:47.2%; left:63.5%;}	
 #b3{top:70.3%; left:24.7%;}	
@@ -23,7 +23,11 @@ section{height:100%; background:url("./images/arbre.jpg"); background-size:100% 
 		<a class="bouteille" id="b1" href="projet.php?type=pratique"><h1>PRATIQUE</h1></a>
 		<a class="bouteille" id="b2" href="projet.php?type=projet"><h1>PROJET</h1></a>
 		<a class="bouteille" id="b3" href="contact.php?"><h1>CONTACT</h1></a>
-		<a class="bouteille" id="b4" href="recherche.php"><h1>RECHERCHE</h1></a>
+		<!--<a class="bouteille" id="b4" href="recherche.php"><h1>RECHERCHE</h1></a>-->
+		<form class="bouteille" id="b4" action='recherche.php' method='post'>
+							<h1><input type='text' name='recherche'>
+							<input type='submit' value='Recherche'></h1>					
+						</form>
 	</section>
 </body
 </html>
